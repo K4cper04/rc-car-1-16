@@ -12,8 +12,8 @@ This project focuses on designing and building a 1:16 scale RC car, combining me
 ## Progress
 - Mechanical design: in progress
 - 3D printed prototypes: completed (multiple iterations)
-- Electronics: in development
-- Software: in developemnt
+- Electronics: development
+- Software: developemnt
 
 ## Gallery
 ### Racing car
