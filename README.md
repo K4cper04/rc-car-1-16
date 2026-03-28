@@ -1,7 +1,7 @@
 # RC Car 1:16 – Personal Engineering Project
 
 ## Overview
-This project focuses on designing and building a 1:16 scale RC car, combining mechanical design, 3D printing, electronics and embedded systems.
+The design is inspired by the Lotus 72 Formula 1 car, with modifications to adapt the concept to a functional 1:16 RC platform, considering manufacturing constraints and component integration, combining mechanical design, 3D printing, electronics and embedded systems.
 
 ## Motivation
 The goal of this project is to gain hands-on experience in mechanical design, embedded systems and system integration.
