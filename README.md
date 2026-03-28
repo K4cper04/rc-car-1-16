@@ -18,6 +18,7 @@ This project focuses on designing and building a 1:16 scale RC car, combining me
 ## Gallery
 ### Racing car
 <img width="1748" height="1021" alt="KK_view_bolid" src="https://github.com/user-attachments/assets/b4944c72-3965-4d3a-8ea7-23ec0f1b90e5" />
+
 ### Controller
 <img width="1225" height="986" alt="KK_view_pad" src="https://github.com/user-attachments/assets/0ff730cd-4ede-4e41-bea0-d1db3cc991c4" />
 
