@@ -17,7 +17,6 @@ The goal of this project is to gain hands-on experience in mechanical design, em
 - Embedded control system (STM32, C) -> [Click here to see the source code](./software)
 - Custom electronics design -> [Click here to see full schematics](./electronics)
 
-## Progress
 ## Project Status
 | Component        | Status        |
 |-----------------|--------------|
