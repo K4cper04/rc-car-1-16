@@ -3,6 +3,14 @@
 ## Overview
 This project focuses on designing and building a 1:16 scale RC car, combining mechanical design, 3D printing, electronics and embedded systems.
 
+## Motivation
+The goal of this project is to gain hands-on experience in mechanical design, embedded systems and system integration.
+
+## Design Decisions
+- Scale: 1:16
+- Modular design for easy iteration
+- Focus on lightweight 3D printed components
+
 ## Features
 - Custom mechanical design (Fusion 360) -> [Click here to see CAD files](./cad)
 - 3D printed components and iterative prototyping -> [Click here to see images](./images)
@@ -10,13 +18,15 @@ This project focuses on designing and building a 1:16 scale RC car, combining me
 - Custom electronics design -> [Click here to see full schematics](./electronics)
 
 ## Progress
-- Mechanical design: in progress
-- 3D printed prototypes: completed (multiple iterations)
-- Electronics: development
-- Software: developemnt
+## Project Status
+| Component        | Status        |
+|-----------------|--------------|
+| Mechanical design | ✅ Completed |
+| 3D printing      | 🟡 In progress |
+| Electronics      | 🟡 In progress |
+| Software         | 🟡 In progress |
 
 ## Gallery & Iterative Prototyping
-### CAD
 #### Racing car
 <img width="1748" height="1021" alt="KK_view_bolid" src="https://github.com/user-attachments/assets/b4944c72-3965-4d3a-8ea7-23ec0f1b90e5" />
 
@@ -29,7 +39,7 @@ This project focuses on designing and building a 1:16 scale RC car, combining me
 
 ![pad_printed](https://github.com/user-attachments/assets/c03dcc70-67d6-44a4-89bf-6acaa69204e6)
 
-### Electronics Design
+## Electronics Design
 #### Racing car
 <img width="1399" height="988" alt="schematBolidu" src="https://github.com/user-attachments/assets/1e1bb2d9-4971-40c7-86b2-b4b0ac8dfd3c" />
 
