@@ -21,6 +21,7 @@
 #include "spi.h"
 #include "gpio.h"
 #include "oled.h"
+#include "images.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -90,33 +91,48 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
+  OLED_Init(); // To odpali ekran
+  OLED_DrawImage(main_screen);
 
+  uint32_t last_tick = 0;
+  uint8_t sec = 0;
+  uint8_t min = 0;
+  uint8_t speed = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	if (HAL_GetTick() - last_tick >= 1000)
+	{
+		last_tick = HAL_GetTick();
+		sec++;
+
+		if (sec >= 60)
+		{
+			sec = 0;
+			min++;
+		}
+
+		OLED_DisplayTime(min, sec);
+	}
+
     if (HAL_GPIO_ReadPin(RED_BUTTON_GPIO_Port, RED_BUTTON_Pin) == GPIO_PIN_RESET)
 	{
-		HAL_GPIO_WritePin(LED_C13_GPIO_Port, GPIO_PIN_13, GPIO_PIN_RESET);
-	}
-	else
-	{
-		HAL_GPIO_WritePin(LED_C13_GPIO_Port, GPIO_PIN_13, GPIO_PIN_SET);
+		if (speed > 0)
+			speed--;
+		HAL_Delay(100);
 	}
 
     if (HAL_GPIO_ReadPin(BLUE_BUTTON_GPIO_Port, BLUE_BUTTON_Pin) == GPIO_PIN_RESET)
     {
-    	OLED_Init(); // To odpali ekran
-    	OLED_Fill(0xFF); // Cały ekran na biało (test)
-    	HAL_Delay(1000);
+    	if (speed < 99)
+    		speed++;
+    	HAL_Delay(100);
+    }
 
-    }
-    else
-    {
-    	OLED_Clear(); // Wyczyść
-    }
+    OLED_DisplaySpeed(speed);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

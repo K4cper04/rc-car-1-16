@@ -19,6 +19,10 @@
 void OLED_Init(void);
 void OLED_Clear(void);
 void OLED_Fill(uint8_t pattern);
+void OLED_DrawImage(const uint8_t* image);
+void OLED_DrawTile(uint8_t x, uint8_t page, uint8_t width, uint8_t heigh, const uint8_t* tile);
+void OLED_DisplayTime(uint8_t min, uint8_t sec);
+void OLED_DisplaySpeed(uint8_t speed);
 void OLED_Command(uint8_t cmd);
 void OLED_Data(uint8_t data);
 
