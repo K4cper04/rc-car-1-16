@@ -45,6 +45,10 @@ The goal of this project is to gain hands-on experience in mechanical design, em
 #### Controller
 <img width="1119" height="790" alt="schematPada" src="https://github.com/user-attachments/assets/85adb5b5-57cc-4d75-9045-a23cf5fce16a" />
 
+## Software
+#### OLED Screen
+![Adobe Express - IMG_3807](https://github.com/user-attachments/assets/921e7223-7192-4529-9020-2abbb9e1fec5)
+
 ## Tech stack
 - Fusion 360
 - STM32
